@@ -11,7 +11,7 @@ out=$(seq 5 | ./plus)
 [ "${out}" = 15 ] || ng "$LINENO"
 
 ### hennanov###
-out=$(echo a | .plus)
+out=$(echo a | ./plus)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
