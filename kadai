@@ -40,6 +40,7 @@ def muitahou(x):
         print("私は右を向いたよ！")
 
     return
+
 def sasitahou(x):
     if x == 1:
         print("左向いちゃったね！")
@@ -65,7 +66,7 @@ def sasita(x):
     return
 
 q = 0
-while q==0:
+while q==0: 
     i = 0
     while i==0:
         print("じゃんけん")
@@ -74,12 +75,12 @@ while q==0:
         print("何を出しますか？")
         x = input()
         y = int(x)
-
+        
         while y>3:
-            y-=3
+            y-=3 
 
         result = zyanken(y,num)
-
+        
         if result == 1:
             otete(num)
             print("あなたの勝ち\n")
@@ -118,5 +119,3 @@ while q==0:
         else:
             sasita(num)
             print("まだ遊べるね！\n")
-
- 
