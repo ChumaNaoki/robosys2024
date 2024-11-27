@@ -1,15 +1,18 @@
-# robosys2024#!/usr/bin/python3
-# SPDX-FileCopyrightText: 2024 Chuma Naoki
-# SPDX-License-Identifier: BSD-3-Clause
-
+#!/usr/bin/python3
+#SPDX-FileCopyrightText: 2024 Chuma Naoki
+#SPDX-License-Identifier: GPL-3.0-only
 import sys
+
+
+def tonum(s)
+    try:
+        return int(s)
+    except:
+        return float(s)
 
 ans = 0
 for line in sys.stdin:
-    try:
-        ans += int(line)
-    except:
-        ans += float(line)
+    line = line.rstrip()
+    ans += tonum(line)
 
 print(ans)
-
