@@ -1,0 +1,63 @@
+#!/usr/bin/python3
+import sys
+
+alphabet = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#" ]
+
+doremi = ["ラ", "ラ＃", "シ", "ド", "ド＃", "レ", "レ＃", "ミ", "ファ", "ファ＃", "ソ", "ソ＃" ]
+
+x = float(sys.argv[1])
+num = 440.0
+num2 = 0.0
+num3 = 27.5
+kenban = 0
+onkai = 0
+onkai1 = 0
+onkai2 = 0
+
+if x<0:
+    print("マイナスの値は測定できません。")
+    sys.exit(0)
+if x<27.5:
+    print(f'入力された周波数{x}Hzは、')
+    print("ピアノの最低音であるA0（ラ0）の27.5Hzよりも小さい周波数のため測定できません。")
+    print("ちなみに人間に聴き取れる最低周波数は20Hzだそうです。")
+    sys.exit(0)
+if x>27.5:
+    while num3 < x:
+        num3 *= 2
+        onkai += 1
+
+if x>=440:
+    while num <= x:
+        num *= 2
+        onkai1 += 1
+    num /= 2
+    onkai1 -= 1
+
+if x<440:
+    while num > x:
+        num /= 2
+        onkai1 -= 1
+
+if num < x:
+    while num < x:
+        num *= 1.0594630943
+        onkai2 += 1
+    onkai2 -= 1
+    num /= 1.0594630943
+
+kenban = 49 + ((onkai1 * 12)  + (onkai2 * 1))
+
+num2 = num * 1.0594630943
+
+print(f'入力された周波数{x}Hzは、')
+if kenban <= 89:
+    print(f'ピアノ鍵盤だと{kenban}番目の音階です。')
+else:
+    print('入力された周波数が大きすぎて88個あるピアノ鍵盤の範囲外です！')
+print(f'音階名だと{alphabet[onkai2]}{onkai}({doremi[onkai2]}{onkai})となり、')
+print(f'{round(num,2)}Hz~{round(num2,2)}Hzの音階に当たります。')
+if x>20000:
+    print("人間に聴き取れる最高周波数20kHzを超えていますね！")
+
+    
