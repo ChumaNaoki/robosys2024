@@ -9,18 +9,18 @@ git clone https://github.com/ChumaNaoki/robosys2024.git
 
 ****
 
-# kadai
+# attimuitehoi
 １人でじゃんけんとあっちむいてほいをするプログラミング
 
 # プログラミングの使用方法
 - robosys2024ディレクトリを導入し移動した上で、
-`./kadai`で実行出来ます。
+`./attimuitehoi`で実行出来ます。
 
 ```
 cd robosys2024
 ```
 ```
-./kadai
+./attimuitehoi
 ```
 
 # 遊び方
