@@ -89,6 +89,7 @@ seq 5 | ./plus
 - [【Python入門】randomモジュールの使い方まとめ](https://www.sejuku.net/blog/20915)
 - [【Python入門】input関数の使い方をわかりやすく解説](https://www.sejuku.net/blog/23823)
 - [【初心者向け】Pythonでwhile文を使う方法](https://techplay.jp/column/610)
+- [Pythonのf-stringsについてしっかり調べてみた](https://qiita.com/simonritchie/items/74f544944ee11a226613)
 
 # 著作権
 - このソフトウェアパッケージは３条BSDライセンスの下、再頒布および使用が許可されます。
