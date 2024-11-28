@@ -103,6 +103,10 @@ while q==0:
     num = random.randint(1,4)
     x = input()
     y = int(x)
+
+    while y>4:
+            y-=4
+
     if y == num:
         if result==1:
             muitahou(num)
