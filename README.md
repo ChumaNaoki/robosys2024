@@ -11,7 +11,7 @@ git clone https://github.com/ChumaNaoki/robosys2024.git
 １人でじゃんけんとあっちむいてほいをするコマンド
 
 # プログラミングの使用方法
-- robosys2024ディレクトリに移動した上で、
+- robosys2024ディレクトリを導入し移動した上で、
 `./kadai`で実行出来ます。
 
 ```
