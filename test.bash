@@ -20,13 +20,7 @@ out=$(echo | ./plus)
 [ "${out}" = "" ] || ng "$LINENO"
 
 out=$(./attimuitehoi)
-out=3
-if num == 1
-[ "${out}" = "私はグーを出したよ！" ] || ng "$LINENO"
-elif num == 2
-[ "${out}" = "私はチョキを出したよ！" ] || ng "$LINENO"
-elif num == 3
-[ "${out}" = "私はパーを出したよ！" ] || ng "$LINENO"
+[ "${out}" = "じゃんけん" ] || ng "$LINENO"
 
 
 [ "${res}" = 0 ] && echo OK
