@@ -20,7 +20,9 @@ out=$(echo | ./plus)
 [ "${out}" = "" ] || ng "$LINENO"
 
 out=$(./attimuitehoi)
-[ "${out}" = "じゃんけん" ] || ng "$LINENO"
+[ "${out}" = "じゃんけん
+1:グー　2:チョキ　3:パー
+何を出しますか？" ] || ng "$LINENO"
 
 
 [ "${res}" = 0 ] && echo OK
