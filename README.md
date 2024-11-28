@@ -83,7 +83,14 @@ seq 5 | ./plus
 - Ubuntu 20.04 LTS
 
 ***
+# 参考にさせていただいたサイト
+- [【Python 入門】条件分岐の基本である if 文の使い方をわかりやすく解説！](https://www.kikagaku.co.jp/kikagaku-blog/python-if-else-elif/)
+- [【Python】defとは？pythonで関数を作成・使用する方法](https://ungifted.tech/blog/python-def/)
+- [【Python入門】randomモジュールの使い方まとめ](https://www.sejuku.net/blog/20915)
+- [【Python入門】input関数の使い方をわかりやすく解説](https://www.sejuku.net/blog/23823)
+- [【初心者向け】Pythonでwhile文を使う方法](https://techplay.jp/column/610)
 
+# 著作権
 - このソフトウェアパッケージは３条BSDライセンスの下、再頒布および使用が許可されます。
 - このパッケージのコードは、下記スライド(CC-BY-SA 4.0 by Ryuichi Ueda)のものを、本人の許可を得て自身の著作としたものです。
     - [ryuichiueda/my＿slides robosys＿2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
