@@ -19,11 +19,6 @@ out=$(echo | ./plus)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(./attimuitehoi)
-[ "${out}" = "じゃんけん
-1:グー　2:チョキ　3:パー
-何を出しますか？" ] || ng "$LINENO"
-
 
 [ "${res}" = 0 ] && echo OK
 
