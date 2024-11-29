@@ -8,7 +8,7 @@ doremi = ["ラ", "ラ#", "シ", "ド", "ド#", "レ", "レ#", "ミ", "ファ", "
 x = float(sys.argv[1])
 num = 440.0
 num2 = 0.0
-num3 = 27.5
+num3 = 32.703
 kenban = 0
 onkai = 0
 onkai1 = 0
@@ -22,7 +22,7 @@ if x<27.5:
     print("ピアノの最低音であるA0（ラ0）の27.5Hzよりも小さい周波数のため測定できません。")
     print("ちなみに人間に聴き取れる最低周波数は20Hzだそうです。")
     sys.exit(0)
-if x>27.5:
+if x>32.703:
     while num3 < x:
         num3 *= 2
         onkai += 1
