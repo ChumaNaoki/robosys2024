@@ -51,6 +51,10 @@ out=$(./onkai 2)
 out=$(./onkai -20)
 [ "${out}" = "マイナスの値は測定できません。" ] || ng "$LINENO"
 
+out=$(./onkai a)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo OK
 
 exit $res
