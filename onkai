@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Chuma Naoki
+# SPDX-License-Identifier: BSD-3-Clause 
 import sys
 
 alphabet = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#" ]
 
 doremi = ["ラ", "ラ#", "シ", "ド", "ド#", "レ", "レ#", "ミ", "ファ", "ファ#", "ソ", "ソ#" ]
 
-x = float(sys.argv[1])
+x = float(sys.stdin.read())
 num = 440.0
 num2 = 0.0
 num3 = 32.703
