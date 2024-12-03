@@ -117,7 +117,7 @@ seq 5 | ./plus
 ***
 
 # テスト環境
-- Ubuntu 20.04 LTS
+- Ubuntu 22.04.5 LTS
 
 # 必要なソフトウェア
 - Python
