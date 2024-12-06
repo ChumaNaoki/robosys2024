@@ -28,12 +28,12 @@ out=$(echo 300 | ./onkai)
 ###入力された周波数が低すぎて測れなかった場合テスト###
 out=$(echo 2 | ./onkai)
 [ "$?" = 1 ] || ng "$LINENO"
-[ "${out}" = "エラーが発生しました。" ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
 
 ###マイナスの値を周波数として入力された場合テスト###
 out=$(echo -20 | ./onkai)
 [ "$?" = 1 ] || ng "$LINENO"
-[ "${out}" = "エラーが発生しました。" ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
 
 out=$(echo a | ./onkai)
 [ "$?" = 1 ] || ng "$LINENO"
