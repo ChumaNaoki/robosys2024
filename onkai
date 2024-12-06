@@ -15,7 +15,8 @@ onkai1 = 0
 onkai2 = 0
 
 if x<27.5:
-    sys.exit(0)
+    sys.stderr.write('エラーが発生しました。\n')
+    sys.exit(1)
 
 if x>32.703:
     while num3 < x:
