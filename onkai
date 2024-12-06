@@ -14,12 +14,9 @@ onkai = 0
 onkai1 = 0
 onkai2 = 0
 
-if x<0:
-    print("error")
-    sys.exit(0)
 if x<27.5:
-    print('error')
     sys.exit(0)
+
 if x>32.703:
     while num3 < x:
         num3 *= 2
@@ -48,6 +45,6 @@ kenban = 49 + ((onkai1 * 12)  + (onkai2 * 1))
 
 num2 = num * 1.0594630943
 
-print(f'{alphabet[onkai2]}{onkai} {round(num,2)} {round(num2,2)}')
+print(f'{kenban} {alphabet[onkai2]}{onkai} {round(num,2)} {round(num2,2)}')
 
     

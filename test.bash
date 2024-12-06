@@ -23,15 +23,15 @@ out=$(echo | ./plus)
 
 ###onkai通常の動作のテスト###
 out=$(echo 300 | ./onkai)
-[ "${out}" = "D4 293.66 311.13" ] || ng "$LINENO"
+[ "${out}" = "42 D4 293.66 311.13" ] || ng "$LINENO"
 
 ###入力された周波数が低すぎて測れなかった場合テスト###
 out=$(echo 2 | ./onkai)
-[ "${out}" = "error" ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
 
 ###マイナスの値を周波数として入力された場合テスト###
 out=$(echo -20 | ./onkai)
-[ "${out}" = "error" ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
 
 out=$(echo a | ./onkai)
 [ "$?" = 1 ] || ng "$LINENO"
