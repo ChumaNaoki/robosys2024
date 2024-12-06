@@ -32,7 +32,8 @@ out=$(echo 2 | ./onkai)
 
 ###マイナスの値を周波数として入力された場合テスト###
 out=$(echo -20 | ./onkai)
-[ "${out}" = "" ] || ng "$LINENO"
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "エラーが発生しました。" ] || ng "$LINENO"
 
 out=$(echo a | ./onkai)
 [ "$?" = 1 ] || ng "$LINENO"
