@@ -44,7 +44,7 @@ if num < x:
 
 kenban = 49 + ((onkai1 * 12)  + (onkai2 * 1))
 
-num2 = num * 1.0594630943
+num2 = (num * 1.0594630943) - 0.01
 
 print(f'{kenban} {alphabet[onkai2]}{onkai} {round(num,2)} {round(num2,2)}')
 

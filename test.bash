@@ -23,7 +23,7 @@ out=$(echo | ./plus)
 
 ###onkai通常の動作のテスト###
 out=$(echo 300 | ./onkai)
-[ "${out}" = "42 D4 293.66 311.13" ] || ng "$LINENO"
+[ "${out}" = "42 D4 293.66 311.12" ] || ng "$LINENO"
 
 ###入力された周波数が低すぎて測れなかった場合テスト###
 out=$(echo 2 | ./onkai)
