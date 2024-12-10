@@ -35,6 +35,10 @@ out=$(echo -20 | ./onkai)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
+###onkai鍵盤の範囲外の周波数が入力された場合の動作のテスト###
+out=$(echo 12300 | ./onkai)
+[ "${out}" = "- F#9 11839.82 12543.84" ] || ng "$LINENO"
+
 out=$(echo a | ./onkai)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
